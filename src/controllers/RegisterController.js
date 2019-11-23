@@ -5,7 +5,7 @@ const Register = mongoose.model('Register');
 
 module.exports = {
 
-    async oninput(req, res) {
+    async oi(req, res) {
         res.send("Hello world");
     },
 
