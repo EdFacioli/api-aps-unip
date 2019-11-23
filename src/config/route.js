@@ -6,7 +6,7 @@ const RegisterController = require('../controllers/RegisterController');
 
 
 module.exports = (app) => {
-
+    app.get('/registers/oi', RegisterController.oi),
     app.get('/registers/device', RegisterController.index),
     app.get('/registers/device/:deviceName', RegisterController.show),
     

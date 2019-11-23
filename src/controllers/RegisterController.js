@@ -5,6 +5,10 @@ const Register = mongoose.model('Register');
 
 module.exports = {
 
+    async oninput(req, res) {
+        res.send("Hello world");
+    },
+
     async index(req, res) {
 
         const registers = await Register.distinct('description');
